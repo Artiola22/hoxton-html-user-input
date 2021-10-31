@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Stylish-Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <h1>Hey there!</h1>
+
+      <label class="name" for="name">
+        <h4 class="question">What's your name?</h4>
+      </label>
+
+      <input
+        type="text"
+        name="name"
+        id="name"
+        minlength="4"
+        maxlength="18"
+        placeholder="Enter your name"
+        required
+      />
+
+      <hr />
+
+      <label class="email-address" for="email-address">
+        <h4>What's your email address?</h4>
+        <br />
+        <input
+          type="text"
+          name="email-address"
+          placeholder="Enter your email address"
+          minlength="12"
+          maxlength="20"
+          required
+        />
+      </label>
+
+      <hr />
+
+      <label class="service" for="service">
+        <h4>What services are you looking for?</h4>
+      </label>
+
+      <select name="service" id="service" required>
+        <option value="Choose-service">Chosse a service</option>
+        <option value="web-developer">Web developer</option>
+        <option value="graphic-design">Graphic-design</option>
+      </select>
+
+      <hr />
+
+      <label class="budget" for="budget">
+        <h4>What is your budget?</h4>
+      </label>
+      <select name="budget" id="budget" required>
+        <option value="select-budget">Select budget</option>
+        <option value="100$">100$</option>
+        <option value="500$">500$</option>
+        <option value="1000$">1000$</option>
+        <option value="more">More</option>
+      </select>
+      <hr />
+
+      <label class="anything-else" for="message">
+        <h4>Anything else you'd like to tell us?</h4>
+        <br />
+        <textarea
+          type="text"
+          name="message"
+          placeholder="Your message here..."
+          id="message"
+        ></textarea>
+      </label>
+      <hr />
+      <label class="t&c" for="t&cs">
+        <h4>I agree with the T&Cs.</h4>
+
+        <input name="checkbox" type="checkbox" required />
+      </label>
+
+      <hr />
+
+      <button type="submit" name="submit" value="Submit" area-required="true">
+        Submit
+        <span>&#8594;</span>
+      </button>
+    </form>
+  </body>
+</html>
